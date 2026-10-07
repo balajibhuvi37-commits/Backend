@@ -23,17 +23,17 @@ const App = () => {
 
   // Task 3 
   const courses = [
-    "Full Stack Development",
+    "Full Stack",
     "MERN Stack",
-    "Java Development",
-    "Python Development",
-    "Data Science"
+    "Java ",
+    "Python ",
+    "Data Analyist"
   ];
 
 
   // Task 1 - 
   const student = {
-    name: "Bhuvanesh",
+    name: "Bhuvi",
     age: 21,
     course: "BSc Physics",
     city: "Chennai"
@@ -62,25 +62,25 @@ const App = () => {
   const students = [
     {
       id: 1,
-      name: "Bhuvanesh",
+      name: "Bhuvi",
       age: 21,
       course: "MERN Stack"
     },
     {
       id: 2,
-      name: "Rahul",
+      name: "moni",
       age: 22,
       course: "Java"
     },
     {
       id: 3,
-      name: "Karthik",
+      name: "dhana",
       age: 20,
       course: "Python"
     },
     {
       id: 4,
-      name: "Vijay",
+      name: "Abisek",
       age: 23,
       course: "Full Stack"
     }
@@ -124,25 +124,25 @@ const App = () => {
   const employees = [
     {
       id: 1,
-      name: "Arun",
+      name: "bhuvi",
       department: "IT",
       salary: 45000
     },
     {
       id: 2,
-      name: "Kumar",
+      name: "Dhana",
       department: "HR",
       salary: 40000
     },
     {
       id: 3,
-      name: "Priya",
+      name: "Moni",
       department: "Finance",
       salary: 50000
     },
     {
       id: 4,
-      name: "Divya",
+      name: "Anbu",
       department: "Marketing",
       salary: 42000
     }
