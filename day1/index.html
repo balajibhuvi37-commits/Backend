@@ -1,11 +1,138 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Tasks</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+
+    <h1>JavaScript Practice</h1>
+
+    <h2>Task 1 - Variables</h2>
+    <script>
+        const name = "Bala";
+        let age = 25;
+        let city = "Coimbatore";
+
+        console.log("Name:", name);
+        console.log("Age:", age);
+        console.log("City:", city);
+    </script>
+
+    <h2>Task 2 - Calculator</h2>
+    <script>
+        let a = 20;
+        let b = 5;
+
+        console.log("Addition:", a + b);
+        console.log("Subtraction:", a - b);
+        console.log("Multiplication:", a * b);
+        console.log("Division:", a / b);
+        console.log("Remainder:", a % b);
+    </script>
+
+    <h2>Task 3 - Age Checker</h2>
+    <script>
+        let age1 = 20;
+
+        if (age1 >= 18) {
+            console.log("Adult");
+        } else {
+            console.log("Minor");
+        }
+    </script>
+
+    <h2>Task 4 - Even or Odd</h2>
+    <script>
+        let number = 7;
+
+        if (number % 2 === 0) {
+            console.log("Even");
+        } else {
+            console.log("Odd");
+        }
+    </script>
+
+    <h2>Task 5 - Positive or Negative</h2>
+    <script>
+        let num = -10;
+
+        if (num > 0) {
+            console.log("Positive");
+        } else if (num < 0) {
+            console.log("Negative");
+        } else {
+            console.log("Zero");
+        }
+    </script>
+
+    <h2>Task 6 - Pass or Fail</h2>
+    <script>
+        let marks = 65;
+
+        if (marks >= 50) {
+            console.log("Pass");
+        } else {
+            console.log("Fail");
+        }
+    </script>
+
+    <h2>Task 7 - Login Check</h2>
+    <script>
+        let isLoggedIn = true;
+
+        if (isLoggedIn) {
+            console.log("Welcome User");
+        } else {
+            console.log("Please Login");
+        }
+    </script>
+
+    <h2>Task 8 - Admin Check</h2>
+    <script>
+        let login = true;
+        let admin = false;
+
+        if (login && admin) {
+            console.log("Admin Dashboard");
+        } else if (login && !admin) {
+            console.log("User Dashboard");
+        } else {
+            console.log("Please Login");
+        }
+    </script>
+
+    <h2>Task 9 - Shopping Balance</h2>
+    <script>
+        let balance = 1000;
+        let price = 300;
+
+        if (balance >= price) {
+            console.log("Purchase successful");
+            balance -= price;
+            console.log("Remaining balance:", balance);
+        } else {
+            console.log("Insufficient balance");
+        }
+    </script>
+
+    <h2>Task 10 - Student Grade</h2>
+    <script>
+        let studentMarks = 82;
+
+        if (studentMarks >= 90) {
+            console.log("Grade: A+");
+        } else if (studentMarks >= 75) {
+            console.log("Grade: A");
+        } else if (studentMarks >= 60) {
+            console.log("Grade: B");
+        } else if (studentMarks >= 50) {
+            console.log("Grade: C");
+        } else {
+            console.log("Grade: Fail");
+        }
+    </script>
+
 </body>
 </html>
+```

@@ -1,0 +1,152 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Array Methods</title>
+</head>
+<body>
+
+    <h1>JavaScript Array Methods - 10 Tasks</h1>
+
+    <!-- TASK 1 - SOME -->
+    <h2>Task 1 - Some</h2>
+    <script>
+        const numbers = [10, 20, 30, 40];
+
+        const result = numbers.some(num => num > 35);
+
+        console.log(result);
+    </script>
+
+    <!-- TASK 2 - EVERY -->
+    <h2>Task 2 - Every</h2>
+    <script>
+        const marks = [60, 70, 80, 90, 55];
+
+        const result2 = marks.every(mark => mark > 50);
+
+        console.log(result2);
+    </script>
+
+    <!-- TASK 3 - INCLUDES -->
+    <h2>Task 3 - Includes</h2>
+    <script>
+        const roles = ["user", "admin", "manager"];
+
+        console.log(roles.includes("admin"));
+    </script>
+
+    <!-- TASK 4 - REDUCE -->
+    <h2>Task 4 - Total Salary </h2>
+    <script>
+        const salaries = [20000, 30000, 40000, 25000, 35000];
+
+        const totalSalary = salaries.reduce(
+            (total, salary) => total + salary, 0
+        );
+
+        console.log("Total Salary:", totalSalary);
+    </script>
+
+    <!-- TASK 5 - SHOPPING CART -->
+    <h2>Task 5 - Shopping Cart</h2>
+    <script>
+        const cart = [
+            { name: "Laptop", price: 60000, quantity: 1 },
+            { name: "Mouse", price: 500, quantity: 2 },
+            { name: "Keyboard", price: 1000, quantity: 1 }
+        ];
+
+        const cartTotal = cart.reduce(
+            (total, item) => total + (item.price * item.quantity), 0
+        );
+
+        console.log("Cart Total:", cartTotal);
+    </script>
+
+    <!-- TASK 6 - FILTER -->
+    <h2>Task 6 - Filter Employees</h2>
+    <script>
+        const employees = [
+            { name: "Bala", salary: 25000 },
+            { name: "Arun", salary: 35000 },
+            { name: "Kumar", salary: 40000 },
+            { name: "Ravi", salary: 20000 },
+            { name: "Mani", salary: 50000 }
+        ];
+
+        const highSalary = employees.filter(
+            employee => employee.salary > 30000
+        );
+
+        console.log(highSalary);
+    </script>
+
+    <!-- TASK 7 - FIND -->
+    <h2>Task 7 - Find Student</h2>
+    <script>
+        const students = [
+            { id: 1, name: "Bala" },
+            { id: 2, name: "Arun" },
+            { id: 3, name: "Kumar" }
+        ];
+
+        const student = students.find(
+            student => student.id === 2
+        );
+
+        console.log(student);
+    </script>
+
+    <!-- TASK 8 - FIND INDEX -->
+    <h2>Task 8 - Find Index</h2>
+    <script>
+        const products = [
+            { id: 101, name: "Laptop" },
+            { id: 102, name: "Mouse" },
+            { id: 103, name: "Keyboard" }
+        ];
+
+        const index = products.findIndex(
+            product => product.id === 102
+        );
+
+        console.log("Product Index:", index);
+    </script>
+
+    <!-- TASK 9 - SORT -->
+    <h2>Task 9 - Sort Products</h2>
+    <script>
+        const productList = [
+            { name: "Laptop", price: 60000 },
+            { name: "Mouse", price: 500 },
+            { name: "Keyboard", price: 1000 },
+            { name: "Monitor", price: 15000 }
+        ];
+
+        productList.sort((a, b) => a.price - b.price);
+
+        console.log(productList);
+    </script>
+
+    <!-- TASK 10 - MAP -->
+    <h2>Task 10 - Employee Names</h2>
+    <script>
+        const employeeList = [
+            { name: "Bala", salary: 30000 },
+            { name: "Arun", salary: 35000 },
+            { name: "Kumar", salary: 40000 },
+            { name: "Ravi", salary: 25000 },
+            { name: "Mani", salary: 50000 }
+        ];
+
+        const employeeNames = employeeList.map(
+            employee => employee.name
+        );
+
+        console.log(employeeNames);
+    </script>
+
+</body>
+</html>
+```
