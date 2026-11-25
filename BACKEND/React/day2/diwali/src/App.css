@@ -1,0 +1,443 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #100d12;
+  color: #fff4e5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 7%;
+  background: rgba(16,13,18,.95);
+  border-bottom: 1px solid #72502c;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #f3c779;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #ddd0c0;
+  transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #f3c779;
+}
+
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: radial-gradient(ellipse, #542b20, #100d12 75%);
+}
+
+.eyebrow {
+  color: #e8b963;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-section h1,
+.content-page h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(45px, 8vw, 85px);
+  margin: 15px 0;
+}
+
+.hero-section h1 span,
+.content-page h1 span {
+  color: #f3c779;
+}
+
+.hero-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin: 15px;
+}
+
+.hero-copy {
+  max-width: 650px;
+  line-height: 1.9;
+  color: #d1c1b1;
+  margin: 15px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.gold-button,
+.outline-button {
+  display: inline-block;
+  padding: 13px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 13px;
+  transition: .3s;
+}
+
+.gold-button {
+  background: linear-gradient(135deg, #f7d58d, #d99a43);
+  color: #24150d;
+  border: none;
+  cursor: pointer;
+}
+
+.outline-button {
+  color: #f3c779;
+  border: 1px solid #f3c779;
+}
+
+.gold-button:hover,
+.outline-button:hover {
+  transform: translateY(-4px);
+}
+
+.hero-decor {
+  margin-top: 45px;
+  color: #f3c779;
+  font-size: 25px;
+}
+
+/* Welcome fireworks */
+
+.welcome-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  text-align: center;
+  background: radial-gradient(circle, #55271c, #100d12 75%);
+  cursor: pointer;
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.welcome-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(40px, 8vw, 85px);
+  color: #f5ca78;
+  margin: 20px 0;
+}
+
+.welcome-content p {
+  margin-bottom: 25px;
+}
+
+.welcome-content small {
+  display: block;
+  margin-top: 18px;
+  color: #c9bdb1;
+}
+
+.firework {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffd37a;
+  box-shadow:
+    0 0 15px 10px #ffd37a55,
+    0 0 40px 20px #ff8e4b33;
+  animation: burst 1.8s infinite;
+}
+
+.firework-one {
+  top: 20%;
+  left: 20%;
+}
+
+.firework-two {
+  top: 30%;
+  right: 20%;
+  animation-delay: .5s;
+}
+
+.firework-three {
+  bottom: 20%;
+  left: 70%;
+  animation-delay: 1s;
+}
+
+@keyframes burst {
+  0% {
+    transform: scale(.2);
+    opacity: .2;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(.3);
+    opacity: .2;
+  }
+}
+
+/* About and Gallery */
+
+.content-page {
+  min-height: 90vh;
+  padding: 70px 8%;
+  background: radial-gradient(ellipse at top, #2a191b, #100d12 65%);
+}
+
+.about-card {
+  max-width: 950px;
+  margin: 45px auto;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 30px;
+  align-items: center;
+  background: #21191b;
+  border: 1px solid #76502c;
+  border-radius: 22px;
+}
+
+.about-symbol {
+  font-size: 85px;
+  text-align: center;
+}
+
+.about-card h2,
+.memory-copy h2 {
+  font-family: 'Playfair Display', serif;
+  color: #f4d59e;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.about-card p,
+.memory-copy > p:not(.eyebrow) {
+  color: #c9bdb1;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.about-card .gold-button {
+  margin-top: 15px;
+}
+
+.gallery-heading {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 55px;
+}
+
+.gallery-heading > p:last-child {
+  color: #c9bdb1;
+  line-height: 1.8;
+}
+
+.memory-list {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 35px;
+}
+
+.memory-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 320px;
+  overflow: hidden;
+  border: 1px solid #76502c;
+  border-radius: 22px;
+  background: #21191b;
+  box-shadow: 0 15px 45px #0005;
+}
+
+.memory-card.reverse .memory-media {
+  order: 2;
+}
+
+.memory-media {
+  position: relative;
+  min-height: 300px;
+  background: #080709;
+}
+
+.memory-media img,
+.memory-media video {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  max-height: 440px;
+  object-fit: cover;
+  display: block;
+}
+
+.speed-label {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 8px 13px;
+  border-radius: 20px;
+  background: #120e0dcc;
+  color: #f5ce84;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.memory-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.memory-number {
+  color: #d5a75e;
+  letter-spacing: 3px;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.gallery-footer {
+  text-align: center;
+  margin-top: 55px;
+  color: #e8b963;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .navbar {
+    gap: 25px;
+  }
+
+  .content-page {
+    padding: 45px 16px;
+  }
+
+  .about-card {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .about-symbol {
+    font-size: 60px;
+  }
+
+  .memory-card {
+    grid-template-columns: 1fr;
+  }
+
+  .memory-card.reverse .memory-media {
+    order: 0;
+  }
+
+  .memory-copy {
+    padding: 25px;
+  }
+
+  .memory-media,
+  .memory-media img,
+  .memory-media video {
+    min-height: 240px;
+    max-height: 360px;
+  }
+}
+
+/* Animated Diwali fireworks */
+.fireworks-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.firework {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffd700;
+  box-shadow:
+    0 0 10px 5px #ffd700,
+    0 0 30px 15px #ff8c00,
+    0 0 60px 25px #ff4500;
+  animation: burst 1.5s infinite ease-in-out;
+}
+
+.firework-one {
+  top: 20%;
+  left: 15%;
+}
+
+.firework-two {
+  top: 35%;
+  right: 18%;
+  animation-delay: .5s;
+}
+
+.firework-three {
+  top: 65%;
+  left: 75%;
+  animation-delay: 1s;
+}
+
+@keyframes burst {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(2.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+}
+

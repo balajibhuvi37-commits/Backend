@@ -1,0 +1,190 @@
+FRONTEND TECHNICAL INTERVIEW QUESTIONS AND ANSWERS
+
+PAGE 1 — QUESTIONS 1 TO 10
+
+1. What is an Attribute in HTML? Explain its types.
+
+An HTML attribute provides additional information about an HTML element. Attributes are written inside the opening tag and help define the properties and behaviour of elements.
+
+Types of Attributes:
+
+1. Global Attributes – Used with most HTML elements. Examples: id, class, style and title.
+2. Specific Attributes – Used with particular elements. Examples: href, src and alt.
+3. Boolean Attributes – Their presence indicates true. Examples: required, disabled and checked.
+
+2. What is CSS Layout? Explain different CSS layout methods and their uses.
+
+CSS Layout is used to arrange and position HTML elements on a webpage.
+
+Different CSS Layout Methods:
+
+1. Normal Flow – Arranges elements in their default order.
+2. Flexbox – Arranges elements in rows or columns.
+3. CSS Grid – Creates layouts using rows and columns.
+4. Position – Controls element positioning using relative, absolute, fixed and sticky.
+5. Float – Places elements on the left or right side.
+
+Uses:
+CSS Layout helps create organized, responsive and user-friendly web pages.
+
+3. What is a Programming Language?
+
+A programming language is a language used to communicate with computers by giving instructions to perform specific tasks.
+
+It helps developers create websites, applications, software and games.
+
+Examples: JavaScript, Python, Java, C and C++.
+
+4. What is JavaScript? Explain its features.
+
+JavaScript is a programming language used to make websites interactive and dynamic.
+
+Features:
+
+1. Lightweight – Easy to use and execute.
+2. Dynamic – Allows content to change dynamically.
+3. Interpreted/JIT Compiled – Executes through JavaScript engines.
+4. Event-Driven – Responds to user actions.
+5. Object-Based – Supports objects and object-oriented programming.
+6. Asynchronous – Handles tasks without blocking the main thread.
+
+5. What is a Function in JavaScript? Explain its types.
+
+A function is a reusable block of code designed to perform a specific task. It helps avoid repeating the same code.
+
+Types of Functions:
+
+1. Function Declaration – A function defined using the function keyword.
+2. Function Expression – A function stored inside a variable.
+3. Arrow Function – A shorter way to write functions.
+4. Anonymous Function – A function without a name.
+5. Callback Function – A function passed as an argument to another function.
+6. IIFE – A function that executes immediately after it is defined.
+
+6. What is the Fetch API in JavaScript? Explain how to fetch data using Fetch.
+
+Fetch API is a modern JavaScript feature used to communicate with servers and retrieve data from external APIs.
+
+Working Steps:
+
+1. Send a request to the server.
+2. The server processes the request.
+3. The server returns a response.
+4. Convert the response into usable data.
+5. Handle the result or errors.
+
+Fetch API uses Promises to handle asynchronous operations.
+
+7. What is React.js? Explain its features.
+
+React.js is a JavaScript library developed by Meta. It is used to build user interfaces, especially single-page applications.
+
+Features:
+
+1. Component-Based Architecture – Divides the UI into reusable components.
+2. Virtual DOM – Helps update the UI efficiently.
+3. JSX – Allows HTML-like syntax inside JavaScript.
+4. Reusability – Components can be reused.
+5. One-Way Data Flow – Data flows from parent components to child components.
+6. Declarative UI – Developers describe how the interface should look.
+
+8. What are ES6 and ES6+ in JavaScript?
+
+ES6 stands for ECMAScript 2015. It introduced important modern JavaScript features.
+
+ES6 Features:
+
+1. Let and Const
+2. Arrow Functions
+3. Classes
+4. Promises
+5. Template Literals
+6. Destructuring
+7. Modules
+
+ES6+ refers to ES6 and later ECMAScript versions that introduce additional features such as async/await, optional chaining and nullish coalescing.
+
+9. What is the difference between npm and npx?
+
+NPM:
+
+NPM stands for Node Package Manager. It is used to install, manage and maintain JavaScript packages and dependencies.
+
+NPX:
+
+NPX stands for Node Package Executor. It is used to execute packages without requiring a separate global installation.
+
+Main Difference:
+
+NPM manages packages, whereas NPX executes packages.
+
+10. What are Babel, esbuild, and Webpack? Explain bundlers.
+
+Babel:
+Babel is a JavaScript compiler that converts modern JavaScript and JSX into compatible JavaScript.
+
+esbuild:
+esbuild is a fast JavaScript bundler and transformer designed for faster development and builds.
+
+Webpack:
+Webpack is a module bundler that combines JavaScript, CSS, images and other resources into optimized files.
+
+Bundler:
+A bundler combines multiple project files and dependencies into optimized output files for the browser.
+
+
+PAGE 2 — QUESTIONS 11 TO 15
+
+11. What is Vite? Explain its uses and features.
+
+Vite is a modern frontend build tool used to develop and build web applications.
+
+Features:
+
+1. Fast Development Server – Starts projects quickly.
+2. HMR – Updates changes instantly without reloading the entire page.
+3. Fast Build – Creates optimized production files.
+4. Framework Support – Supports React, Vue and other frameworks.
+5. ES Modules – Uses native ES modules during development.
+
+Uses:
+Vite makes frontend development faster and easier.
+
+12. What are Oxc, Rollup, and Rolldown?
+
+Oxc:
+Oxc is a collection of high-performance JavaScript tools written in Rust. It provides tools for parsing, transforming and checking JavaScript.
+
+Rollup:
+Rollup is a JavaScript module bundler used to combine project files into optimized bundles.
+
+Rolldown:
+Rolldown is a fast JavaScript bundler written in Rust. It is designed to be compatible with the Rollup ecosystem.
+
+13. What are npm run dev, npm start, and npm run build? Explain their purposes.
+
+These are npm commands used to execute scripts defined in the package.json file.
+
+1. npm run dev – Starts the development server for coding and testing.
+2. npm start – Runs the start script configured in the project.
+3. npm run build – Creates optimized production files for deployment.
+
+Main Difference:
+
+Dev is for development, start runs the configured start script, and build prepares the application for production.
+
+14. What is JSX? What is the difference between JSX and JavaScript?
+
+JSX stands for JavaScript XML. It is a syntax extension of JavaScript that allows developers to write HTML-like code inside JavaScript, mainly in React.
+
+Differences:
+
+1. JSX uses HTML-like syntax.
+2. JavaScript is a programming language.
+3. JSX is commonly used to describe React user interfaces.
+4. JavaScript handles application logic and functionality.
+5. JSX is transformed into JavaScript before execution.
+
+15. What is the difference between JS...
+
+Question incomplete. Full question required.

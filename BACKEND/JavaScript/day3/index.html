@@ -1,0 +1,336 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Advanced Tasks</title>
+</head>
+<body>
+
+    <h1>JavaScript Advanced Practice</h1>
+
+    <!-- TASK 1 -->
+    <h2>Task 1 - User Profile Message</h2>
+    <script>
+        const name = "Bala";
+        const age = 25;
+        const city = "Chennai";
+        const role = "Frontend Developer";
+
+        const message = `Hello, my name is ${name}.
+I am ${age} years old.
+I live in ${city}.
+I am a ${role}.`;
+
+        console.log(message);
+    </script>
+
+    <!-- TASK 2 -->
+    <h2>Task 2 - Simple Calculator</h2>
+    <script>
+        const add = (a, b) => a + b;
+        const subtract = (a, b) => a - b;
+        const multiply = (a, b) => a * b;
+        const divide = (a, b) => a / b;
+
+        console.log(add(20, 10));
+        console.log(subtract(20, 10));
+        console.log(multiply(20, 10));
+        console.log(divide(20, 10));
+    </script>
+
+    <!-- TASK 3 -->
+    <h2>Task 3 - User Greeting</h2>
+    <script>
+        const greetUser = (name, role = "Developer") => {
+            return `Hello ${name}, you are a ${role}.`;
+        };
+
+        console.log(greetUser("Bala", "Frontend Developer"));
+        console.log(greetUser("Bala"));
+    </script>
+
+    <!-- TASK 4 -->
+    <h2>Task 4 - Student Profile</h2>
+    <script>
+        const student = {
+            name: "Bala",
+            age: 25,
+            course: "JavaScript",
+            city: "Chennai"
+        };
+
+        const printStudent = ({ name, age, course, city }) => {
+            console.log(`Student: ${name}
+Age: ${age}
+Course: ${course}
+City: ${city}`);
+        };
+
+        printStudent(student);
+    </script>
+
+    <!-- TASK 5 -->
+    <h2>Task 5 - Product Price Calculator</h2>
+    <script>
+        const product = {
+            name: "Laptop",
+            price: 60000,
+            quantity: 2
+        };
+
+        const calculatePrice = ({ name, price, quantity }) => {
+            const total = price * quantity;
+
+            console.log(`${name}
+Price: ${price}
+Quantity: ${quantity}
+Total: ${total}`);
+        };
+
+        calculatePrice(product);
+    </script>
+
+    <!-- TASK 6 -->
+    <h2>Task 6 - Add More Products</h2>
+    <script>
+        const products1 = ["Laptop", "Mouse"];
+        const products2 = ["Keyboard", "Monitor"];
+
+        const allProducts = [...products1, ...products2];
+
+        console.log(allProducts);
+    </script>
+
+    <!-- TASK 7 -->
+    <h2>Task 7 - Copy and Update User</h2>
+    <script>
+        const user = {
+            name: "Bala",
+            age: 25,
+            role: "Developer"
+        };
+
+        const updatedUser = {
+            ...user,
+            age: 26,
+            role: "Senior Developer"
+        };
+
+        console.log("Original:", user);
+        console.log("Updated:", updatedUser);
+    </script>
+
+    <!-- TASK 8 -->
+    <h2>Task 8 - Shopping Cart Total</h2>
+    <script>
+        const calculateTotal = (...prices) => {
+            let total = 0;
+
+            for (const price of prices) {
+                total += price;
+            }
+
+            return total;
+        };
+
+        console.log(calculateTotal(100, 200, 300));
+        console.log(calculateTotal(50, 100));
+        console.log(calculateTotal(100, 200, 300, 400));
+    </script>
+
+    <!-- TASK 9 -->
+    <h2>Task 9 - User Details with Default Values</h2>
+    <script>
+        const createUser = (
+            name = "Guest",
+            age = 18,
+            city = "Unknown"
+        ) => {
+            return `${name}
+${age}
+${city}`;
+        };
+
+        console.log(createUser("Bala", 25, "Chennai"));
+        console.log(createUser("Bala"));
+    </script>
+
+    <!-- TASK 10 -->
+    <h2>Task 10 - Safe User Profile</h2>
+    <script>
+        const safeUser = {
+            name: "Bala",
+            age: 25
+        };
+
+        const getCity = (user) => {
+            return user.address?.city ?? "Unknown City";
+        };
+
+        console.log(getCity(safeUser));
+
+        safeUser.address = {
+            city: "Chennai"
+        };
+
+        console.log(getCity(safeUser));
+    </script>
+
+    <!-- TASK 11 -->
+    <h2>Task 11 - User Search Result</h2>
+    <script>
+        const users = [
+            { name: "Bala", role: "Developer" },
+            { name: "Arun", role: "Designer" },
+            { name: "Kumar", role: "Tester" }
+        ];
+
+        for (const { name, role } of users) {
+            console.log(`${name} - ${role}`);
+        }
+    </script>
+
+    <!-- TASK 12 -->
+    <h2>Task 12 - Create a User Object</h2>
+    <script>
+        const userName = "Bala";
+        const userAge = 25;
+        const userRole = "Developer";
+
+        const newUser = {
+            userName,
+            userAge,
+            userRole
+        };
+
+        console.log(newUser);
+    </script>
+
+    <!-- TASK 13 -->
+    <h2>Task 13 - Login System</h2>
+    <script>
+        const loginUser = {
+            name: "Bala",
+            role: "Admin",
+            isLoggedIn: true
+        };
+
+        const checkLogin = ({ name, role, isLoggedIn }) => {
+            if (isLoggedIn) {
+                console.log(`Welcome ${name}`);
+                console.log(`Role: ${role}`);
+            } else {
+                console.log("Please Login");
+            }
+        };
+
+        checkLogin(loginUser);
+    </script>
+
+    <!-- TASK 14 -->
+    <h2>Task 14 - Product Data Processor</h2>
+    <script>
+        const laptop = {
+            name: "Laptop",
+            price: 60000,
+            category: "Electronics"
+        };
+
+        const getProductInfo = ({ name, price, category }) => {
+            return `Product: ${name}
+Price: ₹${price}
+Category: ${category}`;
+        };
+
+        console.log(getProductInfo(laptop));
+
+        const updatedProduct = {
+            ...laptop,
+            price: 65000
+        };
+
+        console.log(updatedProduct);
+        console.log(laptop);
+    </script>
+
+    <!-- TASK 15 -->
+    <h2>Task 15 - User Profile System</h2>
+    <script>
+        const finalUser = {
+            name: "Bala",
+            age: 25,
+            role: "Frontend Developer",
+            address: {
+                city: "Chennai"
+            }
+        };
+
+        // Function 1
+        const getUserName = ({ name }) => {
+            return name;
+        };
+
+        console.log(getUserName(finalUser));
+
+        // Function 2
+        const getUserLocation = (user) => {
+            return user.address?.city ?? "Unknown";
+        };
+
+        console.log(getUserLocation(finalUser));
+
+        // Function 3
+        const getUserMessage = ({
+            name,
+            age,
+            role,
+            address
+        }) => {
+            const city = address?.city ?? "Unknown";
+
+            return `${name} is a ${age} year old ${role} from ${city}.`;
+        };
+
+        console.log(getUserMessage(finalUser));
+
+        // Function 4
+        const updateUser = (user) => {
+            return {
+                ...user,
+                age: 26,
+                role: "Senior Frontend Developer"
+            };
+        };
+
+        const updatedFinalUser = updateUser(finalUser);
+
+        console.log("Original User:", finalUser);
+        console.log("Updated User:", updatedFinalUser);
+
+        // Function 5
+        const finalUsers = [
+            finalUser,
+            {
+                name: "Arun",
+                age: 30,
+                role: "Backend Developer"
+            },
+            {
+                name: "Kumar",
+                age: 28,
+                role: "Tester"
+            }
+        ];
+
+        const printUsers = (users) => {
+            for (const { name, role } of users) {
+                console.log(`${name} - ${role}`);
+            }
+        };
+
+        printUsers(finalUsers);
+    </script>
+
+</body>
+</html>
+```

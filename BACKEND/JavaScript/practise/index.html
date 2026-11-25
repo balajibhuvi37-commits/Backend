@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+    
+    
+    
+let num = 153;
+let original = num;
+let copy = num;
+let cubevalue = num;
+let finalnum = 0;
+let count = 0;
+
+// Count the digits
+while (copy > 0) {
+    copy = Math.floor(copy / 10);
+    count++;
+}
+
+// Calculate Armstrong value
+while (cubevalue > 0) {
+    let digit = cubevalue % 10;
+
+    finalnum = finalnum + digit ** count;
+
+    cubevalue = Math.floor(cubevalue / 10);
+}
+
+// Check the result
+if (original === finalnum) {
+    console.log("Armstrong Number");
+} else {
+    console.log("Not an Armstrong Number");
+}
+
